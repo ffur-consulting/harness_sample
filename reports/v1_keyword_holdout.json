@@ -1,0 +1,131 @@
+{
+  "classifier": "v1_keyword_holdout",
+  "n_transcripts": 16,
+  "per_rule": {
+    "PFA": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 1,
+      "tn": 12,
+      "precision": 0.333,
+      "recall": 0.5,
+      "f1": 0.4
+    },
+    "GUAR": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 1,
+      "tn": 12,
+      "precision": 0.333,
+      "recall": 0.5,
+      "f1": 0.4
+    },
+    "TAX": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ESC": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 2,
+      "tn": 11,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "overall": {
+    "tp": 4,
+    "fp": 7,
+    "fn": 4,
+    "tn": 49,
+    "precision": 0.364,
+    "recall": 0.5,
+    "false_positive_rate": 0.125
+  },
+  "ungrounded_flags_dropped": 0,
+  "errors": [
+    {
+      "id": "h02",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named provider recommendation."
+    },
+    {
+      "id": "h04",
+      "rule": "GUAR",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Product rec + certainty."
+    },
+    {
+      "id": "h05",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "loan",
+      "why_label": "Certain approval."
+    },
+    {
+      "id": "h06",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "debt",
+      "why_label": "Hedged estimate."
+    },
+    {
+      "id": "h08",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "will",
+      "why_label": "Legal topic, referral."
+    },
+    {
+      "id": "h09",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Hardship (behind on bills), no referral."
+    },
+    {
+      "id": "h10",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "can't afford",
+      "why_label": "Hardship + referral + follow-up."
+    },
+    {
+      "id": "h12",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Serious vulnerability, no referral."
+    },
+    {
+      "id": "h14",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "super",
+      "why_label": "Points to a neutral comparison tool (borderline)."
+    },
+    {
+      "id": "h15",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "debt",
+      "why_label": "Specific (and harmful) tax statement."
+    },
+    {
+      "id": "h16",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "definitely",
+      "why_label": "'Definitely' about feelings."
+    }
+  ]
+}

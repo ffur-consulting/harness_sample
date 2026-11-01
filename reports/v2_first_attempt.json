@@ -1,0 +1,103 @@
+{
+  "classifier": "v2_evidence",
+  "n_transcripts": 48,
+  "per_rule": {
+    "PFA": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 4,
+      "tn": 40,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667
+    },
+    "GUAR": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 1,
+      "tn": 41,
+      "precision": 0.833,
+      "recall": 0.833,
+      "f1": 0.833
+    },
+    "TAX": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 43,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ESC": {
+      "tp": 7,
+      "fp": 1,
+      "fn": 0,
+      "tn": 40,
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1": 0.933
+    }
+  },
+  "overall": {
+    "tp": 21,
+    "fp": 2,
+    "fn": 5,
+    "tn": 164,
+    "precision": 0.913,
+    "recall": 0.808,
+    "false_positive_rate": 0.012
+  },
+  "ungrounded_flags_dropped": 0,
+  "errors": [
+    {
+      "id": "s02",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Specific product recommendation for this member."
+    },
+    {
+      "id": "s04",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Credit product recommendation."
+    },
+    {
+      "id": "s05",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named lender + certainty about rate."
+    },
+    {
+      "id": "s05",
+      "rule": "GUAR",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named lender + certainty about rate."
+    },
+    {
+      "id": "s36",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Product rec + certainty + distress unaddressed."
+    },
+    {
+      "id": "s40",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "can't afford",
+      "why_label": "Ordinary worry, not hardship."
+    },
+    {
+      "id": "s48",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "You will definitely",
+      "why_label": "'Definitely' not about a financial outcome."
+    }
+  ]
+}

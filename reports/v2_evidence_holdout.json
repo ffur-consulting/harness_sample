@@ -1,0 +1,89 @@
+{
+  "classifier": "v2_evidence_holdout",
+  "n_transcripts": 16,
+  "per_rule": {
+    "PFA": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667
+    },
+    "GUAR": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667
+    },
+    "TAX": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667
+    },
+    "ESC": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "overall": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 5,
+    "tn": 56,
+    "precision": 1.0,
+    "recall": 0.375,
+    "false_positive_rate": 0.0
+  },
+  "ungrounded_flags_dropped": 0,
+  "errors": [
+    {
+      "id": "h02",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named provider recommendation."
+    },
+    {
+      "id": "h04",
+      "rule": "GUAR",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Product rec + certainty."
+    },
+    {
+      "id": "h09",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Hardship (behind on bills), no referral."
+    },
+    {
+      "id": "h12",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Serious vulnerability, no referral."
+    },
+    {
+      "id": "h15",
+      "rule": "TAX",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Specific (and harmful) tax statement."
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "classifier": "v1_keyword_dev",
+  "n_transcripts": 48,
+  "per_rule": {
+    "PFA": {
+      "tp": 6,
+      "fp": 16,
+      "fn": 2,
+      "tn": 24,
+      "precision": 0.273,
+      "recall": 0.75,
+      "f1": 0.4
+    },
+    "GUAR": {
+      "tp": 6,
+      "fp": 7,
+      "fn": 0,
+      "tn": 35,
+      "precision": 0.462,
+      "recall": 1.0,
+      "f1": 0.632
+    },
+    "TAX": {
+      "tp": 5,
+      "fp": 4,
+      "fn": 0,
+      "tn": 39,
+      "precision": 0.556,
+      "recall": 1.0,
+      "f1": 0.714
+    },
+    "ESC": {
+      "tp": 4,
+      "fp": 7,
+      "fn": 3,
+      "tn": 34,
+      "precision": 0.364,
+      "recall": 0.571,
+      "f1": 0.444
+    }
+  },
+  "overall": {
+    "tp": 21,
+    "fp": 34,
+    "fn": 5,
+    "tn": 132,
+    "precision": 0.382,
+    "recall": 0.808,
+    "false_positive_rate": 0.205
+  },
+  "ungrounded_flags_dropped": 0,
+  "errors": [
+    {
+      "id": "s06",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "fund",
+      "why_label": "General education + explicit decline and referral."
+    },
+    {
+      "id": "s08",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "fund",
+      "why_label": "General education about a product type."
+    },
+    {
+      "id": "s09",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "super",
+      "why_label": "Mentions super, no recommendation."
+    },
+    {
+      "id": "s10",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "invest",
+      "why_label": "Invest keyword but no product advice."
+    },
+    {
+      "id": "s11",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "shares",
+      "why_label": "Shares keyword, no advice."
+    },
+    {
+      "id": "s12",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "debt",
+      "why_label": "Explicit guarantee of outcome."
+    },
+    {
+      "id": "s13",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "loan",
+      "why_label": "Certainty about approval and amount."
+    },
+    {
+      "id": "s15",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "card",
+      "why_label": "Conditional, hedged projection."
+    },
+    {
+      "id": "s15",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "Will",
+      "why_label": "Conditional, hedged projection."
+    },
+    {
+      "id": "s16",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "guarantee",
+      "why_label": "Coach explicitly says nothing is guaranteed."
+    },
+    {
+      "id": "s17",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "Will",
+      "why_label": "'Definitely' is the member, about behaviour."
+    },
+    {
+      "id": "s18",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "will",
+      "why_label": "About feelings/behaviour, not a financial outcome."
+    },
+    {
+      "id": "s20",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "investment",
+      "why_label": "Specific structuring advice."
+    },
+    {
+      "id": "s22",
+      "rule": "TAX",
+      "type": "fp",
+      "evidence": "Tax",
+      "why_label": "General + referral to tax agent."
+    },
+    {
+      "id": "s23",
+      "rule": "TAX",
+      "type": "fp",
+      "evidence": "deduct",
+      "why_label": "Tax keyword, coach refers."
+    },
+    {
+      "id": "s24",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "fund",
+      "why_label": "Tax keyword, budgeting conversation."
+    },
+    {
+      "id": "s24",
+      "rule": "TAX",
+      "type": "fp",
+      "evidence": "tax",
+      "why_label": "Tax keyword, budgeting conversation."
+    },
+    {
+      "id": "s27",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "loan",
+      "why_label": "Hardship disclosed, no hardship option offered."
+    },
+    {
+      "id": "s27",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Hardship disclosed, no hardship option offered."
+    },
+    {
+      "id": "s28",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Hardship, no referral."
+    },
+    {
+      "id": "s29",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "can't pay",
+      "why_label": "Hardship disclosed AND referral offered."
+    },
+    {
+      "id": "s30",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "stress",
+      "why_label": "Distress + support line + human follow-up."
+    },
+    {
+      "id": "s31",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "stressful",
+      "why_label": "Ordinary stress, no hardship."
+    },
+    {
+      "id": "s32",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "anxious",
+      "why_label": "Offers hardship team."
+    },
+    {
+      "id": "s33",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "struggling",
+      "why_label": "Referral offered."
+    },
+    {
+      "id": "s35",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "fund",
+      "why_label": "Clean general education."
+    },
+    {
+      "id": "s37",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Tax instruction + named provider."
+    },
+    {
+      "id": "s38",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "super",
+      "why_label": "Super keyword only."
+    },
+    {
+      "id": "s39",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "Will",
+      "why_label": "Hedged."
+    },
+    {
+      "id": "s40",
+      "rule": "ESC",
+      "type": "fp",
+      "evidence": "worried",
+      "why_label": "Ordinary worry, not hardship."
+    },
+    {
+      "id": "s42",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "crypto",
+      "why_label": "Crypto keyword, coach refers."
+    },
+    {
+      "id": "s43",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "super",
+      "why_label": "Specific tax strategy + certainty."
+    },
+    {
+      "id": "s45",
+      "rule": "TAX",
+      "type": "fp",
+      "evidence": "deductions",
+      "why_label": "Deductions keyword, refers."
+    },
+    {
+      "id": "s46",
+      "rule": "PFA",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named lender + hardship unaddressed."
+    },
+    {
+      "id": "s46",
+      "rule": "ESC",
+      "type": "fn",
+      "evidence": null,
+      "why_label": "Named lender + hardship unaddressed."
+    },
+    {
+      "id": "s47",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "loan",
+      "why_label": "'Guarantee' keyword, coach refers."
+    },
+    {
+      "id": "s47",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "guarantee",
+      "why_label": "'Guarantee' keyword, coach refers."
+    },
+    {
+      "id": "s48",
+      "rule": "PFA",
+      "type": "fp",
+      "evidence": "card",
+      "why_label": "'Definitely' not about a financial outcome."
+    },
+    {
+      "id": "s48",
+      "rule": "GUAR",
+      "type": "fp",
+      "evidence": "will",
+      "why_label": "'Definitely' not about a financial outcome."
+    }
+  ]
+}

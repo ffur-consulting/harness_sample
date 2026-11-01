@@ -1,0 +1,53 @@
+{
+  "classifier": "v2_evidence_dev",
+  "n_transcripts": 48,
+  "per_rule": {
+    "PFA": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 40,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "GUAR": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 42,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "TAX": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 43,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ESC": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 41,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "overall": {
+    "tp": 26,
+    "fp": 0,
+    "fn": 0,
+    "tn": 166,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0
+  },
+  "ungrounded_flags_dropped": 0,
+  "errors": []
+}
